@@ -53,7 +53,7 @@ public class API {
                 .subject(authenticate.getName())
                 .issuer("Security_Service")
                 .issuedAt(instant)
-                .expiresAt(instant.plus(2, ChronoUnit.MINUTES))
+                .expiresAt(instant.plus(22, ChronoUnit.MINUTES))
                 .claim("scope",scope)
                 .build();
 
@@ -105,7 +105,7 @@ public class API {
                 .subject(userDetails.getUsername())
                 .issuer("Security_Service")
                 .issuedAt(instant)
-                .expiresAt(instant.plus(2, ChronoUnit.MINUTES))
+                .expiresAt(instant.plus(20, ChronoUnit.MINUTES))
                 .claim("scope",scope)
                 .build();
 
